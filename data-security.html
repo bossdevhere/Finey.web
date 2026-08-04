@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Security & Privacy Architecture - Finey Expense Tracker</title>
+  <meta name="description" content="Technical breakdown of Finey data security architecture: Hive local binary database storage, zero remote server tracking, and offline data safety.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="stylesheet" href="/styles/main.css">
+  <style>
+    .policy-page-container {
+      padding: 140px 0 100px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-md);
+    }
+    .policy-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .policy-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/index.html" class="logo-group">
+        <img src="/assets/logo.png" alt="Finey Logo" class="logo-img">
+        <span>Finey</span>
+        <span class="brand-badge">Data Security</span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span id="themeIcon"></span>
+        </button>
+        <button class="btn btn-outline btn-copy-link" data-url="file:///Users/deven/Desktop/finovo/FinovoWeb/data-security.html">
+          📋 Copy Direct URL
+        </button>
+        <a href="/index.html" class="btn btn-secondary">← Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Security Content -->
+  <div class="container policy-page-container">
+    <div class="policy-card">
+      <h1 class="policy-title">Data Safety & Security Architecture</h1>
+      <div class="policy-meta">
+        <span>Standard: Hive Binary Local Database</span>
+        <span>Google Play Safety Section Verified</span>
+      </div>
+
+      <div class="policy-body">
+        <h4>1. Security Philosophy</h4>
+        <p>Finey was engineered from line one with a fundamental premise: <em>The safest place for your personal financial data is strictly on your device.</em> By eliminating remote backend servers, we remove the vulnerability vector of cloud database data breaches.</p>
+
+        <h4>2. Technical Storage Architecture</h4>
+        <ul>
+          <li><strong>Hive Key-Value Database:</strong> All transaction records, expense entries, budgets, and category preferences are written in optimized binary format inside your device's isolated application storage box.</li>
+          <li><strong>Operating System Sandboxing:</strong> Android and iOS isolate Finey's app storage box using operating system sandboxing primitives, preventing unauthorized apps on your phone from inspecting your financial records.</li>
+          <li><strong>Zero Remote Transmissions:</strong> Finey does not make background HTTP/HTTPS API calls to remote analytics or ad servers.</li>
+        </ul>
+
+        <h4>3. Google Play Data Safety Declaration Guidance</h4>
+        <p>If you are submitting Finey to Google Play Console, use these exact parameters for the Data Safety Form:</p>
+        <ul style="background: var(--bg-primary); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); list-style: none;">
+          <li>✅ <strong>Does your app collect or share user data?</strong> Select <strong>No</strong>.</li>
+          <li>✅ <strong>Is all data stored locally on the device?</strong> Select <strong>Yes</strong>.</li>
+          <li>✅ <strong>Does the app require user accounts or login?</strong> Select <strong>No</strong>.</li>
+        </ul>
+
+        <h4>4. Data Portability & User Backup</h4>
+        <p>You can generate a structured CSV file anytime. The CSV export is generated locally on device memory and saved directly to your device's documents folder without passing through any external network.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding: 0;">
+        <p>&copy; 2026 Finey App. Data Safety Architecture Document.</p>
+        <a href="/index.html" style="color: var(--accent-primary);">Return to Official Finey Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
