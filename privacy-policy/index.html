@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Finey Expense Tracker</title>
+  <meta name="description" content="Official Privacy Policy for Finey Expense Tracker. Details device local storage, zero cloud tracking, and Play Console compliance.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo-group">
+        <img src="/assets/logo.png" alt="Finey Logo" class="logo-img">
+        <span>Finey</span>
+        <span class="brand-badge">Privacy Policy</span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span id="themeIcon"></span>
+        </button>
+        <button class="btn btn-outline btn-copy-link" data-url="/privacy-policy">
+          📋 Copy Direct URL
+        </button>
+        <a href="/" class="btn btn-primary">← Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Policy Content -->
+  <main class="policy-page">
+    <div class="container">
+      <div class="policy-card">
+        <div class="policy-header">
+          <h1>Privacy Policy</h1>
+          <div class="policy-meta">
+            <span>Effective Date: August 1, 2026</span>
+            <span>•</span>
+            <span>Google Play & App Store Compliant</span>
+          </div>
+        </div>
+
+        <div class="policy-body">
+          <h2>1. Introduction</h2>
+          <p>Finey ("we", "our", or "the App") prioritizes absolute user privacy. Finey is designed as an offline-first personal financial manager and expense tracking application. This Privacy Policy informs users ("you") regarding our policies on the collection, use, protection, and disclosure of personal and financial information when using our mobile application.</p>
+
+          <h2>2. Data Collection & Local Storage Architecture</h2>
+          <p>Finey operates on a strict <strong>offline-first, zero-cloud architecture</strong>. We do not require account creation, email registration, password setups, or cloud logins.</p>
+          <ul>
+            <li><strong>Financial Logs & Categories:</strong> All income logs, expense records, categories, calendar dates, budget thresholds, and notes entered into Finey are stored exclusively on your physical device using Hive local binary database storage.</li>
+            <li><strong>Zero Remote Servers:</strong> We do not host remote servers that receive, process, transmit, or store your transaction records.</li>
+          </ul>
+
+          <h2>3. Device Permissions Requested</h2>
+          <p>To deliver specific features, Finey may request the following permissions from your mobile operating system:</p>
+          <ul>
+            <li><strong>Local Notifications (POST_NOTIFICATIONS):</strong> Used strictly to deliver scheduled daily reminder notifications on your device. Notifications are handled locally by the Android/iOS operating system.</li>
+            <li><strong>Storage Access (READ/WRITE_EXTERNAL_STORAGE):</strong> Used exclusively when you choose to export or save your transaction history as a CSV file to your device's local filesystem.</li>
+          </ul>
+
+          <h2>4. Third-Party Analytics & Advertising Disclosures</h2>
+          <p>Finey is committed to clean, transparent software:</p>
+          <ul>
+            <li><strong>Zero Ad Networks:</strong> We do not integrate Google AdMob, Unity Ads, Meta Audience Network, or any other commercial ad networks.</li>
+            <li><strong>Zero Behavioral Trackers:</strong> We do not use third-party analytics SDKs (such as Firebase Analytics, Adjust, AppsFlyer, or Mixpanel) to track user behavior or build user profiles.</li>
+          </ul>
+
+          <h2>5. User Control & Data Retention</h2>
+          <p>Because your data resides entirely on your device, you possess total authority over data retention:</p>
+          <ul>
+            <li><strong>Data Export:</strong> You can export your data to CSV or JSON format anytime via the app's settings menu.</li>
+            <li><strong>Data Deletion:</strong> You can wipe all app data permanently by clearing the application storage in your device's OS settings or by uninstalling the app. Uninstalling Finey immediately deletes all local database files.</li>
+          </ul>
+
+          <h2>6. Children's Privacy Protection</h2>
+          <p>Finey does not collect personal data from anyone, including children under the age of 13. The app is safe for general audiences as no personal identification information is gathered or transmitted.</p>
+
+          <h2>7. Changes to This Privacy Policy</h2>
+          <p>We may update our Privacy Policy periodically to reflect app updates or regulatory compliance. Any changes will be posted on this page with an updated effective date.</p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-copy">
+        &copy; 2026 Finey App. Privacy Policy Document.
+      </div>
+      <div class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/data-security">Data Security</a>
+        <a href="/refund-policy">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Security - Finey Expense Tracker</title>
+  <meta name="description" content="Official Data Security architecture documentation for Finey Expense Tracker.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo-group">
+        <img src="/assets/logo.png" alt="Finey Logo" class="logo-img">
+        <span>Finey</span>
+        <span class="brand-badge">Data Security</span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span id="themeIcon"></span>
+        </button>
+        <a href="/" class="btn btn-primary">← Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="policy-page">
+    <div class="container">
+      <div class="policy-card">
+        <div class="policy-header">
+          <h1>Data Security & Encryption Architecture</h1>
+          <div class="policy-meta">
+            <span>Effective Date: August 1, 2026</span>
+          </div>
+        </div>
+
+        <div class="policy-body">
+          <h2>1. Local Device Sandbox Protection</h2>
+          <p>Finey utilizes Hive binary key-value storage engine isolated inside your Android / iOS application sandbox container. Other apps installed on your device cannot read Finey's database files without root/jailbreak overrides.</p>
+
+          <h2>2. Zero Network Transmissions</h2>
+          <p>No transactions, category entries, balance totals, or personal notes are transmitted across the internet. Finey contains zero background sync services or external API telemetry endpoints.</p>
+
+          <h2>3. Data Ownership & Export</h2>
+          <p>You own 100% of your financial data. You can export your data to CSV or JSON format at any time to back it up or transfer it to another tool.</p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-copy">
+        &copy; 2026 Finey App. Data Security Architecture Document.
+      </div>
+      <div class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/refund-policy">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
